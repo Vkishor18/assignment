@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router';
 import Home from './components/Home';
-import Category from './components/Category';
+import ProductCard from './components/Product/ProductCard'
 import Checkout from './components/Checkout';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
           <Home />
         </Route>
         <Route exact path="/category/:cid">
-          <Category />
+          <ProductCard />
         </Route>
         <Route exact path="/checkout">
           <Checkout/>

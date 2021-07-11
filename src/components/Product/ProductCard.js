@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Category = () => {
+const ProductCard = () => {
   return (
     <div>
-      category
+      hey
     </div>
   )
 }
 
-export default Category
+export default ProductCard
