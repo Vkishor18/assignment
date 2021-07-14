@@ -1,30 +1,29 @@
 import React from 'react';
-import { Route, Switch, useParams } from 'react-router';
-import Home from './components/Home';
-import Checkout from './components/Checkout';
+import { Route, Switch} from 'react-router';
+import Home from './pages/Home';
+import Checkout from './pages/Checkout';
 import Navigation from './components/Navigation'
-import Products from './components/Product/Products';
+import ProductPage from './pages/ProductPage';
+import { CartProvider } from './context/cart.Context';
+import products from './Database/Product.json';
 
 function App() {
 
-  // const {cid} = useParams();
-
   return (
-    <div>
+    <CartProvider>
       <Navigation />
-
       <Switch>
         <Route exact path="/" >
           <Home />
         </Route>
         <Route exact path="/product/:cid">
-          <Products />
+          <ProductPage />
         </Route>
         <Route exact path="/checkout">
-          <Checkout/>
+          <Checkout />
         </Route>
       </Switch>
-    </div>
+    </CartProvider>
   );
 }
 

@@ -5,10 +5,11 @@ import { CardGrid, CardWrapper, StyledDivider, StyledLink } from './Home.styled'
 const Home = () => {
   return (
     <CardGrid>
+      <h1>CATEGORIES</h1>
     <StyledDivider>
       {Categories.map(category => (
         <CardWrapper>
-          <StyledLink to={`/product/${category.id}`}>
+          <StyledLink to={`/product/${category.id}` }>
           <h2>{category.name}</h2>
           <div>{category.description}</div>
           </StyledLink>

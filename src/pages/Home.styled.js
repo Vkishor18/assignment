@@ -2,30 +2,30 @@ import styled from "styled-components";
 import { Divider } from 'rsuite';
 import { Link } from "react-router-dom";
 
-export const ProductGrid = styled.div`
+export const CardGrid = styled.div`
   text-align: center;
   justify-content: center;
-  padding-top: 15%;
+  padding-top: 5%;
 `;
 
-export const ProductStyledDivider = styled(Divider)`
+export const StyledDivider = styled(Divider)`
   width: 50%;
   margin-left: auto;
   margin-right: auto;
 `;
 
-export const ProductWrapper = styled.div`
+export const CardWrapper = styled.div`
   background-color: whitesmoke;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 70%;
   margin-bottom: 10px;
-  padding: 20px;
+  padding: 40px;
   border: 2px solid black;
-  /* box-shadow: 1px 2px 6px lightgrey; */
-  /* :hover {
+  box-shadow: 1px 2px 6px lightgrey;
+  :hover {
     box-shadow: 1px 2px 5px grey;
-  } */
+  }
 `;
 
 export const StyledLink = styled(Link)`
@@ -47,9 +47,9 @@ export const StyledLink = styled(Link)`
 
 export const NavWrapper = styled.ul`
   display: flex;
-  justify-content: center;
+  justify-content: left;
   list-style: none;
-  //border-bottom: 0.5px solid lightgray;
+  border-bottom: 1.5px solid grey;
 `;
 
 export const StyledNavLink = styled(Link)`
@@ -64,6 +64,6 @@ export const StyledNavLink = styled(Link)`
   &.active {
     text-decoration: none;
     color: blueviolet;
-    border-bottom: 1.5pt solid blueviolet;
+    border-bottom: 2pt solid blueviolet;
   }
 `;
